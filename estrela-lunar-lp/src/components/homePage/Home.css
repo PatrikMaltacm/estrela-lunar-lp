@@ -4,11 +4,13 @@
     align-items: center;
 }
 .header{
+    position:fixed;
     width: 100%;
     height: 40px;
     display: flex;
     flex-direction: row;
-    background-color: rgb(61, 66, 71);
+    background-color: #000000;
+    color: white;
     
 }
 .content-header{
@@ -37,9 +39,10 @@
     font-weight: bold;
     text-decoration: none;
     color: 000;
-    background-color: aqua;
+    background-color: #d9dcfb;
     padding: 5px;
     border-radius: 15px;
+    color: black;
 }
 .name{
     width: 200px;
@@ -48,24 +51,55 @@
     align-items: center;
     flex-direction: start;
 }
+.name a{
+    text-decoration: none;
+    color: white;
+}
 
 .name h2{
     margin-left: 25px;
 }
 
+.container-image{
+    position: relative;
+    width: 250px; 
+    height: 250px; 
+}
+
+.logo-i{
+    width: 250px;
+    position: absolute;
+    animation: subirDescer 2s infinite alternate;
+}
+
+@keyframes subirDescer {
+    0% {
+      top: 0;
+    }
+    100% {
+      top: 50px; /* Ajuste de acordo com a distância que deseja que a imagem suba e desça */
+    }
+  }
+
 .content-start{
     width: 100vw;
     height: 500px;
-    background-color: aliceblue;
+    background-color: #d9dcfb;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
+.name-loja{
+    font-size: 3rem;
+}
+
 .content-sobre{
+    background-color: #f0f2ff;
+    width: 100vw;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .text-area{
@@ -76,9 +110,24 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    gap: 20px;
 }
 
 .img-p{
-    width: 200px;
+    width:180px;
     margin: 10px;
+    border-radius: 10px;
+}
+.division-section{
+    background-color: #d9dcfb;
+    width: 100vw;
+    height: 60px;
+}
+
+.content-delivery
+{
+    background-color: #f0f2ff;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
 }
